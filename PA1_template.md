@@ -31,7 +31,7 @@ data$date<-as.Date(data$date)
 
 ```r
 sumDate<-tapply(data$steps,data$date,sum) 
-hist(sumDate)
+hist(sumDate,main = paste("Histogram of total number of stpes"))
 ```
 
 ![](./PA1_template_files/figure-html/unnamed-chunk-3-1.png) 
